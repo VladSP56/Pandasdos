@@ -16,8 +16,6 @@ def analyze_prices(filename='divan_prices.csv'):
             # Преобразуем в целое число, если строка не пустая, иначе возвращаем NaN
             return int(price_str) if price_str else None
 
-            # Применяем функцию очистки к столбцу 'Price'
-
         df['Price'] = df['Price'].apply(clean_price)
 
         # Преобразуем столбец 'Price' в числовой формат
@@ -47,7 +45,4 @@ def analyze_prices(filename='divan_prices.csv'):
     except Exception as e:
         print(f"Ошибка при анализе данных: {e}")
 
-    # Основной код
-
-
-analyze_prices()
+    analyze_prices()
