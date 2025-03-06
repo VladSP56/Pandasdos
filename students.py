@@ -1,5 +1,4 @@
 import pandas as pd
-from unicodedata import numeric
 
 # Создание DataFrame с данными
 data = {
@@ -32,7 +31,7 @@ Q3_math = df['Математика'].quantile(0.75)
 print("\nQ1 для оценок по математике:", Q1_math)
 print("Q3 для оценок по математике:",Q3_math)
 
-# Рассчет IQR
+# Расчет IQR
 IQR_math = Q3_math - Q1_math
 print("IQR для оценок по математике:", IQR_math)
 
